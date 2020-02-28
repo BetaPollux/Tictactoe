@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: darkslategrey;
+}
+h1, h2 {
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.container {
+    margin: auto;
+    width: 320px;
+}
+.game-area {
+    background-color: black;
+    font-size: 0px; /* No text here; do not display whitespace */
+    width: 306px;
+    height: 306px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.game-cell {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.game-cell:hover {
+    background-color: orange;
+}
+div[col="0"] {
+    clear: left;
+    margin-right: 3px;
+}
+div[col="2"] {
+    clear: right;
+    margin-left: 3px;
+}
+div[row="0"] {
+    margin-bottom: 3px;
+}
+div[row="2"] {
+    margin-top: 3px;
+}
+div[marked="x"] {
+    background-image: url("../images/xo-sprite.gif");
+    background-position: 0px -100px;
+}
+div[marked="o"] {
+    background-image: url("../images/xo-sprite.gif");
+    background-position: 0px 0px;
+}
+span#next-turn-label {
+    margin-left: 10px;
+}
+input#clear {
+    float: right;
+    margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Tic-Tac-Toe</h1>
+            <h2><span id="score-o">0</span> : <span id="score-x">0</span></h2>
+            <div class="game-area">
+                <div class="game-cell" row="0" col="0"></div>
+                <div class="game-cell" row="0" col="1"></div>
+                <div class="game-cell" row="0" col="2"></div>
+                <div class="game-cell" row="1" col="0"></div>
+                <div class="game-cell" row="1" col="1"></div>
+                <div class="game-cell" row="1" col="2"></div>
+                <div class="game-cell" row="2" col="0"></div>
+                <div class="game-cell" row="2" col="1"></div>
+                <div class="game-cell" row="2" col="2"></div>
+            </div>
+            <span id="next-turn-label">Next turn: <span id="next-turn">O</span></span>
+            <input id="clear" type="button" value="Clear"/>
+        </div>
+        <script src="js/tictactoe.js"></script>
+    </body>
+</html>
